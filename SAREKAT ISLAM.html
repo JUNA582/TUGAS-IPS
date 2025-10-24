@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Sarekat Islam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://image.slidesharecdn.com/sejarah-sarekatislam-181115022900/75/Sejarah-Sarekat-Islam-1-2048.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background-color: #4a5568;
+        }
+        .flag-symbol {
+            width: 200px;
+            height: 133px;
+            background: linear-gradient(to right, #1d9a6c 33%, white 33%, white 66%, #e53e3e 66%);
+            position: relative;
+            border: 1px solid #cbd5e0;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="book-open" class="w-6 h-6"></i>
+                <span class="text-xl font-bold">Sarekat Islam Explorer</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#sejarah" class="hover:text-green-200 transition">Sejarah</a>
+                <a href="#tokoh" class="hover:text-green-200 transition">Tokoh</a>
+                <a href="#kontribusi" class="hover:text-green-200 transition">Kontribusi</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-700 px-4 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#sejarah" class="text-white hover:text-green-200 transition py-2">Sejarah</a>
+                <a href="#tokoh" class="text-white hover:text-green-200 transition py-2">Tokoh</a>
+                <a href="#kontribusi" class="text-white hover:text-green-200 transition py-2">Kontribusi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Sejarah Sarekat Islam</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Organisasi pergerakan nasional yang memainkan peran penting dalam sejarah kemerdekaan Indonesia   
+                 = 1. Athallah 2. Juna 3. Asyam 4. Akmal</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#sejarah" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Pelajari Sejarah</a>
+                <a href="https://id.wikipedia.org/wiki/Sarekat_Islam" target="_blank" class="bg-white hover:bg-gray-100 text-green-800 px-6 py-3 rounded-lg font-medium transition duration-300 flex items-center justify-center gap-2">
+                    <i data-feather="external-link" class="w-4 h-4"></i>
+                    Kunjungi Wikipedia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Sejarah Section -->
+        <section id="sejarah" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-800">Sejarah Sarekat Islam</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-green-700">Latar Belakang Pendirian</h3>
+                <p class="mb-4 text-gray-700">Sarekat Islam (SI) awalnya muncul sebagai Sarekat Dagang Islam (SDI) pada tahun 1911 di Solo. SDI didirikan pada 11 November 1911 oleh H. Samanhudi, seorang guru Muslim di Surakarta, Jawa Tengah.</p>
+                <p class="mb-4 text-gray-700">Berdirinya SI didorong oleh faktor ekonomi dan sosial, terutama sebagai reaksi terhadap dominasi ekonomi kelompok non-pribumi, khususnya keturunan Tionghoa yang sering merugikan pribumi dalam dunia bisnis.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <h3 class="text-2xl font-semibold mb-6 text-green-700">Perkembangan Penting</h3>
+                <div class="space-y-8">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-green-300"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">1911: Pendirian SDI</h4>
+                            <p class="text-gray-700">Sarekat Dagang Islam didirikan di Solo oleh H. Samanhudi untuk melindungi kepentingan pedagang pribumi.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-green-300"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">1912: Transformasi ke SI</h4>
+                            <p class="text-gray-700">SDI bertransformasi menjadi Sarekat Islam di bawah kepemimpinan H.O.S. Tjokroaminoto, memperluas cakupan ke bidang politik.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-green-300"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">1913: Pertumbuhan Pesat</h4>
+                            <p class="text-gray-700">Dalam satu tahun, SI mengadakan rapat besar di Surabaya yang dihadiri ribuan anggota.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-green-300"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">1916: Pengakuan Resmi</h4>
+                            <p class="text-gray-700">SI diakui oleh pemerintah Hindia Belanda dengan anggota mencapai 800.000 orang.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 5 -->
+                    <div class="relative timeline-item pl-8">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600 border-4 border-green-300"></div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h4 class="text-xl font-semibold mb-2">1920-an: Perpecahan</h4>
+                            <p class="text-gray-700">SI terpecah menjadi SI Putih (nasionalis Islam) dan SI Merah (sosialis) akibat pengaruh ideologi sosialisme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokoh Section -->
+        <section id="tokoh" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-800">Tokoh Penting</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tokoh 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 card-hover">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJLPcGrXHEdmHMLVv4b9RxSleLUNtRbCXM7cx-hGScWs3AHnPiT9vu7kR-rkCe_7KjYxHSPP_XgwDPg-SWenOtUc6Quto5sHZvBZmbznbj" alt="H. Samanhudi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">H. Samanhudi</h3>
+                        <p class="text-gray-600 mb-4">Pendiri Sarekat Dagang Islam (1911)</p>
+                        <p class="text-gray-700">Seorang guru Muslim di Surakarta yang mendirikan SDI untuk melindungi kepentingan pedagang pribumi.</p>
+                    </div>
+                </div>
+                
+                <!-- Tokoh 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 card-hover">
+                    <img src="data:image/jpeg;base64,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" alt="H.O.S. Tjokroaminoto" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">H.O.S. Tjokroaminoto</h3>
+                        <p class="text-gray-600 mb-4">Pemimpin Sarekat Islam (1912-1934)</p>
+                        <p class="text-gray-700">Mentransformasi SDI menjadi SI dan memimpinnya sebagai organisasi politik berbasis Islam.</p>
+                    </div>
+                </div>
+                
+                <!-- Tokoh 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 card-hover">
+                    <img src="data:image/jpeg;base64,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" alt="Haji Agus Salim" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-700">Haji Agus Salim</h3>
+                        <p class="text-gray-600 mb-4">Tokoh SI Putih</p>
+                        <p class="text-gray-700">Memimpin faksi SI Putih dan menginisiasi gerakan Pan-Islamisme dalam SI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Kontribusi Section -->
+        <section id="kontribusi">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-800">Kontribusi untuk Indonesia</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="users" class="text-green-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Persatuan Rakyat</h3>
+                    </div>
+                    <p class="text-gray-700">SI berhasil menyatukan rakyat Indonesia dari berbagai latar belakang dengan dasar Islam, membentuk kesadaran nasional melawan kolonialisme.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="activity" class="text-green-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Pergerakan Politik</h3>
+                    </div>
+                    <p class="text-gray-700">SI merupakan salah satu organisasi pertama yang memperjuangkan kemerdekaan Indonesia secara politik melalui Volksraad dan diplomasi.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="dollar-sign" class="text-green-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Pemberdayaan Ekonomi</h3>
+                    </div>
+                    <p class="text-gray-700">SI memperkuat ekonomi rakyat dengan mendukung pedagang kecil pribumi untuk bersaing dengan pengusaha asing.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="book" class="text-green-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-700">Pendidikan Politik</h3>
+                    </div>
+                    <p class="text-gray-700">SI menjadi wadah pendidikan politik bagi banyak tokoh pergerakan nasional, termasuk Soekarno yang pernah menjadi murid Tjokroaminoto.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- External Links -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center text-green-800">Pelajari Lebih Lanjut</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <a href="https://id.wikipedia.org/wiki/Sarekat_Islam" target="_blank" class="bg-white hover:bg-gray-50 p-4 rounded-lg shadow-md flex items-center justify-between transition duration-300">
+                    <div class="flex items-center">
+                        <i data-feather="external-link" class="text-green-600 mr-3 w-5 h-5"></i>
+                        <span>Wikipedia Sarekat Islam</span>
+                    </div>
+                    <i data-feather="chevron-right" class="text-gray-400 w-5 h-5"></i>
+                </a>
+                
+                <a href="https://www.kemdikbud.go.id/" target="_blank" class="bg-white hover:bg-gray-50 p-4 rounded-lg shadow-md flex items-center justify-between transition duration-300">
+                    <div class="flex items-center">
+                        <i data-feather="book" class="text-green-600 mr-3 w-5 h-5"></i>
+                        <span>Kemdikbud RI</span>
+                    </div>
+                    <i data-feather="chevron-right" class="text-gray-400 w-5 h-5"></i>
+                </a>
+                
+                <a href="https://www.museumnasional.or.id/" target="_blank" class="bg-white hover:bg-gray-50 p-4 rounded-lg shadow-md flex items-center justify-between transition duration-300">
+                    <div class="flex items-center">
+                        <i data-feather="home" class="text-green-600 mr-3 w-5 h-5"></i>
+                        <span>Museum Nasional</span>
+                    </div>
+                    <i data-feather="chevron-right" class="text-gray-400 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i data-feather="book-open" class="mr-2 w-5 h-5"></i>
+                        Sarekat Islam Explorer
+                    </h3>
+                    <p class="text-green-200 mt-1">Mengenal sejarah pergerakan nasional Indonesia</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-green-200 hover:text-white transition">
+                        <i data-feather="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-green-200 hover:text-white transition">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-green-200 hover:text-white transition">
+                        <i data-feather="instagram" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-6 pt-6 text-center text-green-300">
+                <p>&copy; 2025 Sejarah Sarekat Islam. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
